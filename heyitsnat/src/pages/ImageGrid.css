@@ -1,0 +1,78 @@
+/* Container for the grid */
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 3 columns */
+  grid-auto-rows: 200px; /* Default row height */
+  grid-auto-columns: 50px;
+  gap: 10px; /* Spacing between images */
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+/* Individual image container */
+.image-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  text-decoration: none; /* Remove underline */
+}
+
+/* Style for the images */
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit:cover; /* Ensures image fits without distortion */
+  transition: transform 0.3s ease;
+}
+
+/* Zoom effect on hover */
+.image-container:hover img {
+  transform: scale(1.1);
+}
+
+/* Overlay styling */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 10px;
+}
+
+.overlay h3{
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: bold;
+  margin:0;
+}
+/* Overlay text */
+.overlay p {
+  color: #ffffff; /* White text */
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Show overlay on hover */
+.image-container:hover .overlay {
+  opacity: 1;
+}
+
+/* Custom spans for larger images */
+.image-container:nth-child(1) {
+  grid-column: span 2; /* First image spans 2 columns */
+  grid-row: span 2; /* First image spans 2 rows */
+}
+
+.image-container:nth-child(4) {
+  grid-column: span 2; /* Fourth image spans 2 columns */
+}

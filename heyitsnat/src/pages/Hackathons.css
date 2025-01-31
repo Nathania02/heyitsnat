@@ -1,0 +1,31 @@
+/* Hackathons.css */
+.hackathons {
+    color: #ffffff; /* White text */
+    font-family: 'Georgia', serif; /* Elegant serif font */
+    padding: 40px;
+  }
+  
+  .hackathons h1 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 40px;
+  }
+  
+  .hackathon-item {
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* Two columns, 1/3 and 2/3 width */
+    gap: 20px;
+    margin-bottom: 30px;
+    align-items: start;
+  }
+  
+  .hackathon-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .hackathon-description {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  

@@ -1,0 +1,55 @@
+.internship-card {
+    padding: 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease-in-out;
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .internship-card.hover {
+    background-color: #333; /* Darker background color on hover */
+  }
+  
+  .company-logo {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  .company-logo img {
+    max-width: 100px;
+  }
+  
+  .details {
+    color: #fff;
+    text-align: center;
+  }
+  
+  .details h2 {
+    margin-bottom: 5px;
+  }
+  
+  .details ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .details li {
+    margin-bottom: 5px;
+  }
+  
+  .social-icons {
+    text-align: center;
+    margin-top: 15px;
+  }
+  
+  .social-icons a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+
+  .details-link{
+    color: #fff;
+  }
+  
+  /* Add styles for specific social media icons (if needed) */

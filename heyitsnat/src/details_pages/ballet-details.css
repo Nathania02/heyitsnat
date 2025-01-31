@@ -1,0 +1,46 @@
+h2{
+    margin-left: 40px;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh; /* Full viewport height */
+  }
+  
+  .image {
+    width: 200px;  /* Adjust size as needed */
+    height: 200px; /* Same as width for a perfect circle */
+    border-radius: 20%;
+    object-fit: cover; /* Ensures the image fills the circle */
+  }
+  
+  .containerdescription{
+    justify-content:space-evenly;
+    margin-left: 40px;
+    margin-right: 40px;
+    line-height: 40px;
+    /* align-items: center;
+    margin-left: 40px; */
+    /* text-align: center; */
+  }
+  
+  p{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  
+  .image-row {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Space between images */
+    margin-bottom: 20px;
+  }
+  
+  .image-row img {
+    max-width: 40%;
+    height: auto;
+  }
+  
+  a{
+    color: white;
+  }
