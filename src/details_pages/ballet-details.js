@@ -8,21 +8,20 @@ const BalletDetails = () => {
       <Navbar/>
         <h2>Ballet Assistant Teacher</h2>
       <div class='containerdescription'>
-        <p>From October 2023 to February 2024, I was the Operations Associate for SMU Patron's Day 2024. Although this role was challenging and tiring, I enjoyed the entire process and had gain new knowledge and skills from this. 
-            It was raining during the event day which made operations messy and more complicated. However, with good teamwork, my team members and I were able to solve issues successfully and smoothly.
+        <p>Completing my O-levels National Exams in 2018, I was given a chance to be a Ballet Assistant Teacher, under the tutelage of my Ballet Teacher. Little did I know that I would stay in this job for 6 years,
+          working full-time during holidays and on weekends when there was school. I loved children and this job gave me a chance to interact with them which I truly enjoyed. The smiles on the children faces and the hardwork 
+          that they put in during the lessons were the main factors that kept me going. I was glad to be able to pass down my dance knowledge to young dancers and assist them in their ballet journey. 
             <br/><b>My Role:</b><br/>
-            <li>Facilitated and coordinated operational efforts between the Office of Student Life, Office of Safety and Security and other relevant offices</li>
-            <li>Worked closely with the Directors to support and provide crucial inputs on the operational planning of all functional areas</li>
-            <li>Provided support in Administrative and Finance matters regarding operations as well as assisting the manage the Central Command Centre (CCC) during the event</li>
-            <li>Managed the crowd on the event day itself, ensuring that each location is safe and everyone is able to have fun. </li>
-            <b>Outcome:</b>
-            <br/>Patron's Day 2024 was a success with everything going smoothly, having no accidents and injuries. 
+            <li>When my teacher was not around, I would conduct classes for children (age 4-10)</li>
+            <li>Manage unusual incidents such as students throwing tantrums, wetting their leotards etc. </li>
+            <li>I also planned and organised ballet coaching classes and examination schedules with my ballet teacher</li>
+            <li>I prepared the necessary documents to be disseminated to the students' parents to inform them of important information</li>
+            <li>I also interacted with parents and utiliased communication channels to inform parents about updated, class schedules or any changes in class timings etc.</li>
+            Overall, being an assistant ballet teacher has allowed me to grow in many different areas. I was also able to have a deeper look into the life of a ballet teacher
+            and the challenges faced. It was amazing to see my ballet teacher handled all these on her own previously, from planning exam schedules, administrative matters to managing classes. 
+            It had been a truly enjoyable experience being a ballet assistant teacher and I would embarked on this journey again when I am back to Singapore after my exchange. 
             </p>
       </div> 
-      <div className="image-row">
-      <img src="/heyitsnat/Opsteam.jpg" alt="Image 1" className="square-image" />
-      <img src="/heyitsnat/ops.jpg" alt="Image 2" className="square-image" />
-    </div>
       {/* Add more details about the internship here */}
     </div>
   );
