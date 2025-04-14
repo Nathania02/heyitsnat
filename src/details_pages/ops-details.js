@@ -20,7 +20,7 @@ const OpsDetails = () => {
             </p>
       </div> 
       <div className="image-row">
-      <img src="/heyitsnat/opsteam.jpg" alt="Image 1" className="square-image" />
+      <img src="/heyitsnat/Opsteam.jpg" alt="Image 1" className="square-image" />
       <img src="/heyitsnat/ops.jpg" alt="Image 2" className="square-image" />
     </div>
       {/* Add more details about the internship here */}
