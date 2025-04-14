@@ -21,8 +21,8 @@ const InternshipCardBallet = () => {
         <h2>Ballet Assistant Teacher</h2>
         <h3>Ms Blue Ballet</h3>
         <p>December 2018 - December 2024</p>
-        {/* <a className='details-link' href='heyitsnat/ballet-details'>Find out more here</a> */}
-        <Link to="/ballet-details">Find out more here</Link>
+        <a className='details-link' href='heyitsnat/ballet-details'>Find out more here</a>
+
       </div>
     </div>
   );

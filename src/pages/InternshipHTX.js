@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import {Link} from 'react-router-dom';
 import './Internship.css'; // Import the CSS file
 
 const InternshipCardHTX = () => {
@@ -25,7 +24,7 @@ const InternshipCardHTX = () => {
         <h2>Data Science Intern</h2>
         <h3>Home Team Science and Technology Agency (HTX)</h3>
         <p>May 2024 - October 2024</p>
-        <Link to="/htx-details">Find out more here</Link>
+        <a className='details-link' href='heyitsnat/htx-details'>Find out more here</a>
       </div>
       <div className="social-icons">
         <a href="https://www.instagram.com/your_instagram_handle" target="_blank" rel="noopener noreferrer">

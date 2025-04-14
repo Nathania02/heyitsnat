@@ -25,7 +25,7 @@ const InternshipCardGovTech = () => {
         <h2>Data Science and Artificial Intelligence Intern</h2>
         <h3>Government Technology Agency (GovTech)</h3>
         <p>April 2021 - June 2022</p>
-        <Link to="/govtech-details">Find out more here</Link>
+        <a className='details-link' href='heyitsnat/govtech-details'>Find out more here</a>
       </div>
       <div className="social-icons">
         <a href="https://www.instagram.com/your_instagram_handle" target="_blank" rel="noopener noreferrer">
