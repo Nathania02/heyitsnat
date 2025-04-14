@@ -24,7 +24,7 @@ const InternshipCardMarketing = () => {
       <div className="details">
         <h2>Marketing, Communications and Media Director</h2>
         <p>January 2023 - December 2023</p>
-        <a className='details-link' href='heyitsnat/marketing-details'>Find out more here</a>
+        <Link to="/marketing-details">Find out more here</Link>
       </div>
       <div className="social-icons">
         <a href="https://www.instagram.com/your_instagram_handle" target="_blank" rel="noopener noreferrer">
