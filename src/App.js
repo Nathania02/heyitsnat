@@ -27,6 +27,7 @@ import InternshipCardHTX from './pages/InternshipHTX';
 import InternshipCardMarketing from './pages/Marketing';
 import InternshipCardOps from './pages/Ops';
 import InternshipCardBallet from './pages/Ballet';
+import ExperienceGrid from './pages/ExperienceGrid';
 
 
 const App = () => {
@@ -66,11 +67,12 @@ const App = () => {
     </div>
     <div className='Experiences'>
       <h1 id='exp'>Experiences</h1>
-      <InternshipCardBallet/>
+      <ExperienceGrid/>
+      {/* <InternshipCardBallet/>
       <InternshipCardHTX/>
       <InternshipCardMarketing/>
       <InternshipCardOps/>
-      <InternshipCardGovTech/>
+      <InternshipCardGovTech/> */}
     </div>
     <div className='hackathons'>
       <Hackathons/>
