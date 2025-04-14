@@ -24,16 +24,17 @@ body {
  body {
   margin: 0;
   font-family: 'Arial', sans-serif;
-  background-color: #001133; /* Dark blue background */
-  color: #ffffff;
-}
+  background-color: #fef0f5;
+  color: black;}
 
 .welcome-page {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 50px;
-  height: 80vh;
+  padding-top: 50px;
+  padding-left: 100px;
+  padding-right: 150px;
+  padding-bottom: 50px;  height: 80vh;
 }
 
 .content {
@@ -109,39 +110,32 @@ p {
 
 #proj{
   text-align: center;
-  color: white;
   margin-top: 90px;
 }
 
 #hack{
   text-align: center;
-  color: white;
   margin-top: 90px;
 }
 
 #exp{
   text-align: center;
-  color: white;
   margin-top: 90px;
 }
 
 #award{
   text-align: center;
-  color: white;
   margin-top: 90px;
 }
 
 #about{
   text-align: center;
-  color: white;
 }
 
 #skills{
   text-align: center;
-  color: white;
 }
 
 #hobbies{
   text-align: center;
-  color: white;
 }

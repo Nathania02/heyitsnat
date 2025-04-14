@@ -1,0 +1,50 @@
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+  }
+
+  .card h2{
+    padding-right: 30px;
+  }
+  .card {
+    background-color: #c5d6f0;
+    color: black;
+    padding: 20px;
+    width: 300px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease;
+  
+    /* Center content vertically and horizontally */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card a {
+    color: black;
+    text-decoration: underline;
+    display: inline-block;
+    margin-top: 10px;
+  }
+  
+  @media screen and (max-width: 1000px) {
+    .card {
+      width: 45%;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .card {
+      width: 90%;
+    }
+  }
