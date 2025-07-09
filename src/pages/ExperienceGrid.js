@@ -15,13 +15,13 @@ const experiences = [
     link: "htx-details",
   },
   {
-    title: "Operations Associate, Patron's Day 2024",
-    company: "SMU",
+    title: "Operations Associate",
+    company: "SMU Patron's Day 2024",
     period: "Oct 2023-Feb 2024",
     link: "ops-details",
   },
   {
-    title: "Marketing Director",
+    title: "Director of Office of Marketing, Communications and Media",
     company: "SMU Symphonia",
     period: "Jan 2023-Dec 2023",
     link: "marketing-details",
@@ -40,8 +40,8 @@ const ExperienceGrid = () => {
     <div className="grid-container">
       {experiences.map((exp, idx) => (
         <div className="card" key={idx}>
-          <h2>{exp.title}</h2>
-          <h3>{exp.company}</h3>
+          <h4>{exp.title}</h4>
+          <h5>{exp.company}</h5>
           <p>{exp.period}</p>
           <Link to={exp.link}>Find out more here</Link>
           </div>

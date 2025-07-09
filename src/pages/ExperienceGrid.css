@@ -3,11 +3,11 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
-    padding: 40px;
+    padding: 20px;
   }
 
-  .card h2{
-    padding-right: 30px;
+  .card h4{
+    padding-right: 5px;
   }
   .card {
     background-color: #c5d6f0;
@@ -35,6 +35,10 @@
     text-decoration: underline;
     display: inline-block;
     margin-top: 10px;
+  }
+
+  .card p{
+    font-size: 15px;
   }
   
   @media screen and (max-width: 1000px) {

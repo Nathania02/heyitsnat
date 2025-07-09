@@ -1,19 +1,23 @@
 h2{
     margin-left: 40px;
   }
-  .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 40vh; /* Full viewport height */
-  }
+
+.Navbar{
+  padding-top: 1px;
+}
+
+.container{
+  display: flex;
+  background-color: #fef0f5;
   
-  .image {
+}
+  
+.image {
     width: 200px;  /* Adjust size as needed */
     height: 200px; /* Same as width for a perfect circle */
     border-radius: 20%;
     object-fit: cover; /* Ensures the image fills the circle */
-  }
+}
   
   .containerdescription{
     justify-content:space-evenly;

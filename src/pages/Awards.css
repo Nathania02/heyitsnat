@@ -1,0 +1,111 @@
+.policy-page {
+    color: black; /* White text */
+    font-family: Arial, sans-serif; /* Example font */
+    padding: 20px;
+    min-height: 100vh; /* Full viewport height */
+    box-sizing: border-box;
+  }
+  
+  .policy-heading {
+    font-size: 3em;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .policy-subheading {
+    font-size: 1.1em;
+    color: #aaa;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  
+  .policy-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Align to the left */
+    border-bottom: 1px solid #333; /* Bottom line */
+    padding-bottom: 15px; /* Space below the line */
+    margin-bottom: 30px; /* Space between nav and content */
+  }
+
+  .content-title{
+    color: black;
+  }
+  
+  .nav-arrows {
+    font-size: 1.5em;
+    color: #666;
+    cursor: pointer;
+    padding: 0 10px;
+  }
+  
+  .nav-categories {
+    display: flex;
+    gap: 20px; /* Space between categories */
+    overflow-x: auto; /* Enable horizontal scrolling if many categories */
+    -ms-overflow-style: none; /* Hide scrollbar for IE and Edge */
+    scrollbar-width: none; /* Hide scrollbar for Firefox */
+  }
+  
+  .nav-categories::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for Chrome, Safari, Opera */
+  }
+  
+  .nav-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    white-space: nowrap; /* Prevent wrapping */
+  }
+  
+  .nav-item:hover {
+    background-color: white;
+  }
+  
+  .nav-item.active {
+    background-color: #c5d6f0; /* Orange background for active */
+    color: #000; /* Black text for active */
+    font-weight: bold;
+  }
+  
+  .category-icon {
+    width: 20px; /* Adjust icon size */
+    height: 20px;
+    margin-right: 8px;
+  }
+  
+  .policy-content-section {
+    background-color: #c5d6f0; /* Darker background for content */
+    padding: 30px;
+    border-radius: 8px;
+  }
+  
+  
+  /* New styles for individual policy articles */
+  .policy-article {
+    margin-bottom: 30px; /* Space between different policy articles */
+    padding-bottom: 20px; /* Padding at the bottom of each article */
+    border-bottom: 1px solid #2a2a2a; /* A subtle separator between articles */
+  }
+  
+  .policy-article:last-child {
+    margin-bottom: 0; /* No margin after the last article */
+    border-bottom: none; /* No border after the last article */
+    padding-bottom: 0;
+  }
+  
+  .article-title {
+    font-size: 25px; /* Slightly adjusted for clarity, matches old content-title */
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+  
+  .article-description {
+    font-size: 15px; /* Matches old content-description */
+    line-height: 1.6;
+    color: black;
+  }

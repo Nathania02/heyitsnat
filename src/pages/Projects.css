@@ -1,0 +1,93 @@
+/* src/Services.module.css */
+
+.servicesContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f8f8f8;
+  }
+  
+  .servicesContentWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+  }
+  
+  .servicesList {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  @media (min-width: 768px) {
+    .servicesList {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+  
+  .serviceItem {
+    background: linear-gradient(135deg, #e0c3fc, #8ec5fc);
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+  
+  @media (min-width: 768px) {
+    .serviceItem {
+      width: 30%;
+    }
+  }
+  
+  .serviceIconWrapper {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: white; /* Add a white background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .serviceIcon {
+    width: 40px; /* Adjust icon size */
+    height: 40px;
+  }
+  
+  .serviceTitle {
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  .serviceDescription {
+    color: #666;
+  }
+  
+  .textContent {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .hireButton {
+    background-color: #ff9800;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .scrollIndicator {
+    margin-top: 20px;
+    cursor: pointer;
+  }

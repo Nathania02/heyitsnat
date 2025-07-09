@@ -28,38 +28,43 @@ import InternshipCardMarketing from './pages/Marketing';
 import InternshipCardOps from './pages/Ops';
 import InternshipCardBallet from './pages/Ballet';
 import ExperienceGrid from './pages/ExperienceGrid';
+import PolicyPage from './pages/Awards';
 
 
 const App = () => {
   return (
-    <div className="App">
-      <Navbar/>
-    <div className="welcome-page">
-      <div className="content">
-        <h1>
-          Hi, I'm Nathania Yeo! 
-          {/* <span className="wave">👋</span> */}
-        </h1>
-        <p>
-          I'm a junior student studying Information Systems in SMU.
-        </p>
-        <div className="social-icons">
-          <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
-            <i className="fab fa-github"></i>
-          </a>
-          <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer">
-            <i className="fab fa-linkedin"></i>
-          </a>
-          <a href="mailto:example@email.com">
-            <i className="fas fa-envelope"></i>
-          </a>
+    <div className="container-fluid">
+      <div className='welcomeContainer'>
+        <div className="Navbar">
+        <Navbar/>
         </div>
-        <button className="contact-button">Contact Me</button>
+        <div className="welcome-page">
+          <div className="content">
+            <h1>
+              Hi, I'm Nathania Yeo! 
+              {/* <span className="wave">👋</span> */}
+            </h1>
+            <p>
+              I'm a junior student studying Information Systems in SMU.
+            </p>
+            <div className="social-icons">
+              <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                <i className="fab fa-github"></i>
+              </a>
+              <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer">
+                <i className="fab fa-linkedin"></i>
+              </a>
+              <a href="mailto:example@email.com">
+                <i className="fas fa-envelope"></i>
+              </a>
+            </div>
+            <button className="contact-button">Contact Me</button>
+          </div>
+          <img src="/heyitsnat/profile.png" alt="Nathania Yeo" className="profile-image"/> 
       </div>
-      <img src="/heyitsnat/profile.png" alt="Nathania Yeo" className="profile-image"/> 
     </div>
     <div className='about'>
-      <h2 id='about'>Graduating in 2025 Dec, I am interested</h2>
+      <h2 id='about'>PASSIONATE ABOUT DATA SCIENCE AND AI</h2>
       </div>
     <div className='projects'>
       <h1 id='proj'>Projects</h1>
@@ -77,14 +82,8 @@ const App = () => {
     <div className='hackathons'>
       <Hackathons/>
     </div>
-    <div className='awards'>
-      <h1 id='award'>Awards</h1>
-    </div>
-    <div className='skills'>
-      <h1 id='skills'>Skills</h1>
-    </div>
-    <div className='hobbies'>
-      <h1 id='hobbies'>Hobbies</h1>
+    <div className='more-details'>
+      <PolicyPage/>
     </div>
     </div>
   );
