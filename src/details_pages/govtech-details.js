@@ -27,10 +27,39 @@ const GovTechInternshipDetails = () => {
       <div className="container-fluid d-flex flex-column justify-content-end align-items-center mt-5"> {/* Changed to d-flex flex-column for vertical alignment and justify-content-end */}
         <div className="content">
           <h2 className="text-center">Data Science and Artificial Intelligence Intern</h2> {/* Add text-center if you want the h2 centered */}
-        <p className="text-justify mt-3">I had a chance to intern in GovTech during my third year in polytechnic. This internship was an eye opening experience. Being my 
-          first internship, I was very nervous and I did not know what to expect. Fortunately, I was very lucky to meet extremely helpful colleagues. Whenever I met challenges,
-          my colleagues would always be willing to help and provide guidance to me. </p>  
+        <p className="text-justify mt-3">Under the Polytechnic Technology Programme (PTP), I had a chance to intern in GovTech during my third year in polytechnic. This internship was an eye opening experience. Being my 
+          first internship, I was very nervous and I did not know what to expect. Fortunately, I was very lucky to meet extremely helpful and patient mentors and colleagues. 
+          Whenever I met challenges, my colleagues would always be willing to help and provide guidance to me. 
+          I have to admit that the learning curve was very steep in the beginning. The tools used in the real-world was different from what 
+          school had taught us and therefore, I had to watch videos and read articles to have a better understanding on how to use those tools. 
+
+          <br/><br/>
+
+          During this one year, I was assigned a major project which was to develop a Video Analytics Model Evaluation Framework to evaluate machine learning models.
+          This task seemed daunting at first but slowly, I got the hang of what I needed to do and was able to developed the framework successfully. 
+          This project was taken as my Final Year Project and with this project, I was awarded the Accenture Project Prize. 
+
+          <br/><br/>
+          I am very grateful for this internship opportunity with GovTech where I had learnt a lot. After the 1 year with GovTech, I had a chance to extend my internship for
+          another 3 months to improve on the framework. 
+          </p>  
           <p className="text-justify mt-3">Read my short reflection post <a href='https://www.linkedin.com/posts/temasek-polytechnic_temasekpoly-tpcreatingtomorrow-activity-6915609417770053633-cZZR?utm_source=share&utm_medium=member_desktop'>here</a>! </p>
+          <div className="container">
+            <div className='row gx-2'>
+              <div className='col-6'>
+                  <img 
+                  src="/heyitsnat/govtechprofile.jpg" 
+                  alt="Image 1" 
+                  className="img-fluid w-100" />
+              </div>
+              <div className='col-6'>
+                  <img src="/heyitsnat/govtechgrp.jpg" 
+                  alt="Image 2" 
+                  className="img-fluid w-100" />
+              </div>
+            </div>
+         </div>
+
         </div>
       </div>
     </div>

@@ -28,7 +28,7 @@ const OpsDetails = () => {
         <div className="content">
           <h2 className="text-center mx-3">Operations Associate</h2> {/* Add text-center if you want the h2 centered */}
         <p className="text-justify mt-3">From October 2023 to February 2024, I was the Operations Associate for SMU Patron's Day 2024. Although this role was challenging and tiring, I enjoyed the entire process and had gain new knowledge and skills from this. 
-            It was raining during the event day which made operations messy and more complicated. However, with good teamwork, my team members and I were able to solve issues successfully and smoothly.
+            It was raining during the event day which made things more complicated. However, with good teamwork, my team members and I were able to solve issues successfully and smoothly.
             <br/><br/><b>My Role:</b><br/>
             <li>Facilitated and coordinated operational efforts between the Office of Student Life, Office of Safety and Security and other relevant offices</li>
             <li>Worked closely with the Directors to support and provide crucial inputs on the operational planning of all functional areas</li>

@@ -32,12 +32,14 @@ const MarketingDetails = () => {
             <br/><br/><b>My Role:</b><br/>
             <li>Social Media: I oversaw and maintained multiple social media platforms that SMU Symphonia has such as Instagram, TikTok and Facebook. </li>
             <li>Design: For each event and production, my Assistant Director and I carefully crafted attrative and eye catching visuals. These visuals included production posters, instagram posts, programme booklets, electronic direct mail (EDM) etc. </li>
-            <li>Productions: I spearheaded impactful marketing campaigns for Symphonia 2023 productions. </li>
+            <li>Productions: I spearheaded impactful marketing campaigns for Symphonia 2023 productions. I was also part of the operations 
+              team for productions. With the EXCO, we orderly loaded and unloaded instruments into concert venues, 
+              ensured the safety of performers and took charge of the registration and FOH. </li>
             <br/><b>Outcome:</b>
             <br/>Through the visuals created and designed,
             we were able to drive high audience engagement where we hit a record high ticket sales of 538/631 for our annual production - Festiva and 698/831 for our winds production - Grandioso. 
             For Grandioso, with the theme Once Upon A Dream where we performed popular tunes from Disney movies, we had a best dressed competition. In order to make it attractive, I engaged with 
-            sponsors to foster productive partnerships and collaborations. Our team was able to secure a sponsorship from LUMOS where we gave a LUMOS RAY Home Cinema Projector woth $298 as our grand prize for
+            sponsors to foster productive partnerships and collaborations. Our team was able to secure a sponsorship from LUMOS where we gave a LUMOS RAY Home Cinema Projector worth $298 as our grand prize for
             the best dressed competition.
             <br/><br/><b>Tools Used:</b><br/>
             <li>Canva</li>

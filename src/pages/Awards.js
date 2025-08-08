@@ -108,7 +108,6 @@ const PolicyPage = () => {
 
   return (
     <div className="policy-page">
-      <h1 className="policy-heading">More Details</h1>
       {/* <p className="policy-subheading">Concrete policy changes that advocates for a better Singapore.</p> */}
 
       <div className="policy-navigation">

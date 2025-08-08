@@ -29,12 +29,15 @@ const HTXInternshipDetails = () => {
           <h2 className="text-center mx-3">AI Engineer Intern</h2> {/* Add text-center if you want the h2 centered */}
           <p className="text-justify mt-5"> {/* Use text-justify if you want justified text, or text-left/text-start for left-aligned */}
             During summer of 2024, I had a chance to intern in Home Team Science and Technology Agency (HTX) as an Artificial Intelligence Engineer Intern.
-            The main project that I worked on was developing an image deepfake detection feature for HTX's deepfake detector product named AlchemiX.
-            It was tough in the beginning as there were many existing parts that I needed to learn and understand before building the new feature that
-            could be integrated into the current product.
+            The main project that I worked on was developing an image deepfake detection feature for HTX's deepfake detector product named AlchemiX. This project was
+            an eye-opening experience as I was able to learn more about the deepfake scams and dive deeper as to how deepfake images or videos were created. 
+            There were many challenges along the way but I am glad that I was able to overcome them with the help of my colleagues and mentors. 
+
            <br/><br/>Besides having the chance to contribute to protecting citizens from deep fake scams, I was also able to forge new connections and friendships during
-            this internship. I am also very thankful that I was given a chance to extend my full time internship into a part-time internship for another 3 months from August to October.
-            Overall, this internship had been an extremely fruitful one as I learnt new knowledge that would be helpful in this field in the future.
+            this internship. I am also very thankful that I was given a chance to extend my full-time internship into a part-time internship for another 3 months from August 2024 to October 2024
+            and that I could continue contributing to Singapore public section in keeping Singapore safe. My internship at HTX had definitely been a fruitful one with new knowledge learnt that would
+            be helpful in this field in the future.
+
             <br/><br/>Read my medium article <a href="https://medium.com/htx-s-s-coe/detecting-the-undetectable-my-internship-journey-fighting-deepfakes-with-ai-76b7ca27e60c">here</a>
             </p>
           <div className="container">

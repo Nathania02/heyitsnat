@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Navbar() {
+function Navbar({scrollTo, refs}) {
   return (
     <div className="d-flex justify-content-center px-3 px-md-4 px-lg-5">
       <nav
@@ -21,7 +21,13 @@ function Navbar() {
           }}
         >
           {/* Brand/Logo */}
-          <a className="navbar-brand fw-bold fs-4" href="/heyitsnat">Nathania Yeo</a>
+          <a 
+            className="navbar-brand fw-bold fs-4" 
+            onClick={() => scrollTo(refs.homeRef)} // Call scrollTo with homeRef
+            style={{ cursor: 'pointer' }} // Add cursor pointer to indicate it's clickable
+          >
+            Nathania Yeo
+          </a> 
           
           {/* Toggler button */}
           <button
@@ -39,16 +45,51 @@ function Navbar() {
           {/* Navbar links */}
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0"> {/* ms-auto for right alignment */}
-              {['Home', 'Projects', 'Experiences', 'Hackathons', 'More Details'].map((item) => (
-                <li className="nav-item" key={item}>
-                  <a 
-                    className="nav-link" 
-                    href={`/heyitsnat/${item.toLowerCase().replace(' ', '')}`}
-                  >
-                    {item}
-                  </a>
-                </li>
-              ))}
+              <li className="nav-item">
+                <a 
+                  className="nav-link" 
+                  onClick={() => scrollTo(refs.homeRef)} // Scroll to home
+                  style={{ cursor: 'pointer' }}
+                >
+                  Home
+                </a>
+              </li>
+              <li className="nav-item">
+                <a 
+                  className="nav-link" 
+                  onClick={() => scrollTo(refs.projectsRef)} // Scroll to projects
+                  style={{ cursor: 'pointer' }}
+                >
+                  Projects
+                </a>
+              </li>
+              <li className="nav-item">
+                <a 
+                  className="nav-link" 
+                  onClick={() => scrollTo(refs.experiencesRef)} // Scroll to experiences
+                  style={{ cursor: 'pointer' }}
+                >
+                  Experiences
+                </a>
+              </li>
+              <li className="nav-item">
+                <a 
+                  className="nav-link" 
+                  onClick={() => scrollTo(refs.hackathonsRef)} // Scroll to hackathons
+                  style={{ cursor: 'pointer' }}
+                >
+                  Hackathons
+                </a>
+              </li>
+              <li className="nav-item">
+                <a 
+                  className="nav-link" 
+                  onClick={() => scrollTo(refs.moreDetailsRef)} // Scroll to more details
+                  style={{ cursor: 'pointer' }}
+                >
+                  More Details
+                </a>
+              </li>
             </ul>
           </div>
         </div>
