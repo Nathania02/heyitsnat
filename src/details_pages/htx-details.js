@@ -1,8 +1,21 @@
-import React from 'react';
+import React, {useRef} from 'react';
 import Navbar from '../components/Navbar';
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 const HTXInternshipDetails = () => {
+  const homeRef = useRef(null);
+  const projectsRef = useRef(null);
+  const experiencesRef = useRef(null);
+  const hackathonsRef = useRef(null);
+  const moreDetailsRef = useRef(null);
+  
+    // Function to handle scrolling, passed down to Navbar
+  const scrollToSection = (ref) => {
+    if (ref && ref.current) {
+      ref.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
+
   return (
     // Use Bootstrap's d-flex, flex-column, and vh-100 to make the App container a flex column taking full viewport height
       <div
@@ -16,8 +29,8 @@ const HTXInternshipDetails = () => {
       {/* Navbar at the top, centered horizontally */}
       {/* Use Bootstrap's container-fluid for full width, or container for a fixed width */}
       {/* Add justify-content-center to the parent of Navbar for horizontal centering */}
-        <div> {/* Use container to center content within the navbar */}
-          <Navbar />
+        <div className="Navbar">
+        <Navbar scrollTo={scrollToSection} refs={{homeRef, projectsRef, experiencesRef, hackathonsRef, moreDetailsRef}}/>
         </div>
 
       {/* Main content, pushed to the bottom and taking remaining space */}
@@ -28,6 +41,8 @@ const HTXInternshipDetails = () => {
         <div className="content">
           <h2 className="text-center mx-3">AI Engineer Intern</h2> {/* Add text-center if you want the h2 centered */}
           <p className="text-justify mt-5"> {/* Use text-justify if you want justified text, or text-left/text-start for left-aligned */}
+            <b>Read my medium article here:</b> <a href="https://medium.com/htx-s-s-coe/detecting-the-undetectable-my-internship-journey-fighting-deepfakes-with-ai-76b7ca27e60c">here</a>
+            <br/><br/>
             During summer of 2024, I had a chance to intern in Home Team Science and Technology Agency (HTX) as an Artificial Intelligence Engineer Intern.
             The main project that I worked on was developing an image deepfake detection feature for HTX's deepfake detector product named AlchemiX. This project was
             an eye-opening experience as I was able to learn more about the deepfake scams and dive deeper as to how deepfake images or videos were created. 
@@ -38,7 +53,6 @@ const HTXInternshipDetails = () => {
             and that I could continue contributing to Singapore public section in keeping Singapore safe. My internship at HTX had definitely been a fruitful one with new knowledge learnt that would
             be helpful in this field in the future.
 
-            <br/><br/>Read my medium article <a href="https://medium.com/htx-s-s-coe/detecting-the-undetectable-my-internship-journey-fighting-deepfakes-with-ai-76b7ca27e60c">here</a>
             </p>
           <div className="container">
             <div className='row gx-2'>

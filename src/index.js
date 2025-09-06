@@ -10,8 +10,6 @@ import OpsDetails from './details_pages/ops-details';
 import HTXInternshipDetails from './details_pages/htx-details';
 import BalletDetails from './details_pages/ballet-details';
 import ScrollToTop from './pages/ScrollToTop';
-import Carexplorer from './details_pages/careplorer';
-import GreenTree from './details_pages/greentree';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <HashRouter>
@@ -24,8 +22,6 @@ root.render(
       <Route path="/ops-details" element={<OpsDetails />} />
       <Route path="/htx-details" element={<HTXInternshipDetails />} />
       <Route path="/ballet-details" element={<BalletDetails />} />
-      <Route path="/carexplorer" element={<Carexplorer />} />
-      <Route path="/greentree" element={<GreenTree />} />
     </Routes>
     </HashRouter>
 );

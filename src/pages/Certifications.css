@@ -1,0 +1,94 @@
+/* TrustedCompanies.css */
+.certifications {
+  overflow: hidden;
+}
+
+.certifications-flow {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  height: 220px;
+}
+
+.certifications-track {
+  display: flex;
+  position: absolute;
+  animation: flowAnimation 20s linear infinite;
+  min-width: 200%; /* Double width to accommodate duplicated items */
+}
+
+.certifications-item {
+  flex: 0 0 auto;
+  width: 200px;
+  height: 200px;
+  padding: 15px;
+  margin: 0 15px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.certifications-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.certifications-logo {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.certifications-name {
+  font-size: 1.2rem;
+  text-align: center;
+  color: #333;
+}
+
+/* Animation for the flowing effect */
+@keyframes flowAnimation {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%); /* Move by half the width */
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .certifications-item {
+    width: 150px;
+    height: 150px;
+    margin: 0 10px;
+  }
+  
+  .certifications-logo {
+    font-size: 1.5rem;
+  }
+  
+  .certifications-name {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .certifications-item {
+    width: 120px;
+    height: 120px;
+    margin: 0 8px;
+  }
+  
+  .certifications-flow {
+    height: 140px;
+  }
+
+  .certifications-name {
+    font-size: 0.75rem;
+  }
+}

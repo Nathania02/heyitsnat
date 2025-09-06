@@ -1,6 +1,20 @@
 import React from 'react';
+import {  Link, useNavigate, useLocation  } from 'react-router-dom';
 
-function Navbar({scrollTo, refs}) {
+function Navbar() {
+  const navigate = useNavigate()
+  const location = useLocation()
+
+  const handleLinkClick = (sectionId) => {
+    if (location.pathname === "/") {
+      const sectionElement = document.getElementById(sectionId);
+      if (sectionElement) {
+        sectionElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      } else {
+        navigate("/", { state: { sectionId: sectionId } });
+      }
+    };
   return (
     <div className="d-flex justify-content-center px-3 px-md-4 px-lg-5">
       <nav
@@ -23,7 +37,7 @@ function Navbar({scrollTo, refs}) {
           {/* Brand/Logo */}
           <a 
             className="navbar-brand fw-bold fs-4" 
-            onClick={() => scrollTo(refs.homeRef)} // Call scrollTo with homeRef
+            onClick={() => handleLinkClick('home')} // Call scrollTo with homeRef
             style={{ cursor: 'pointer' }} // Add cursor pointer to indicate it's clickable
           >
             Nathania Yeo
@@ -48,7 +62,7 @@ function Navbar({scrollTo, refs}) {
               <li className="nav-item">
                 <a 
                   className="nav-link" 
-                  onClick={() => scrollTo(refs.homeRef)} // Scroll to home
+                  onClick={() => handleLinkClick('home')} // Scroll to home
                   style={{ cursor: 'pointer' }}
                 >
                   Home
@@ -57,7 +71,7 @@ function Navbar({scrollTo, refs}) {
               <li className="nav-item">
                 <a 
                   className="nav-link" 
-                  onClick={() => scrollTo(refs.projectsRef)} // Scroll to projects
+                  onClick={() => handleLinkClick('projects')} // Scroll to projects
                   style={{ cursor: 'pointer' }}
                 >
                   Projects
@@ -66,7 +80,7 @@ function Navbar({scrollTo, refs}) {
               <li className="nav-item">
                 <a 
                   className="nav-link" 
-                  onClick={() => scrollTo(refs.experiencesRef)} // Scroll to experiences
+                  onClick={() => handleLinkClick('experiences')} // Scroll to experiences
                   style={{ cursor: 'pointer' }}
                 >
                   Experiences
@@ -75,7 +89,7 @@ function Navbar({scrollTo, refs}) {
               <li className="nav-item">
                 <a 
                   className="nav-link" 
-                  onClick={() => scrollTo(refs.hackathonsRef)} // Scroll to hackathons
+                  onClick={() => handleLinkClick('hackathons')} // Scroll to hackathons
                   style={{ cursor: 'pointer' }}
                 >
                   Hackathons
@@ -84,7 +98,7 @@ function Navbar({scrollTo, refs}) {
               <li className="nav-item">
                 <a 
                   className="nav-link" 
-                  onClick={() => scrollTo(refs.moreDetailsRef)} // Scroll to more details
+                  onClick={() => handleLinkClick('moredetails')} // Scroll to more details
                   style={{ cursor: 'pointer' }}
                 >
                   More Details
@@ -98,4 +112,9 @@ function Navbar({scrollTo, refs}) {
   );
 }
 
+
 export default Navbar;
+
+
+
+

@@ -20,20 +20,26 @@ body {
 
  */
 
+/* @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap'); */
 
- body {
+body {
   margin: 0;
-  font-family: 'Arial', sans-serif;
   color: black;
 }
 
+h1, h2, h3, h4, h5 {
+  font-family: "Merriweather", serif;
+}
+ p, span{
+  font-family: "Inter", sans-serif;
+ }
 .Navbar{
   padding-top: 1px;
 }
 
 .welcomeContainer {
   background-color: #fef0f5;
-  margin-top: 10px;
+  margin-top: 15px;
   margin: 15px;
 }
 
@@ -139,10 +145,22 @@ p {
 .Experiences{
   background-color: #fef0f5 ;
   padding: 1em;
+  margin: 15px;
 }
 
-.more-details{
+.certifications{
   background-color: #fef0f5 ;
+  padding: 1em;
+  margin: 15px;
+}
+.more-details{
+  margin: 15px;
+}
+
+.hackathons {
+  background-color: #fef0f5 ;
+  padding: 1em;
+  margin: 15px;
 }
 
 #about{

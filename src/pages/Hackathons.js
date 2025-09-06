@@ -81,7 +81,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Hackathons = () => {
   return (
-    <div className="container py-5">
+    <div className="container mt-3">
       {/* Hackathon items */}
       <div className="row justify-content-center">
         {/* First Hackathon Item */}
