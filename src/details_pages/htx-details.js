@@ -38,7 +38,7 @@ const HTXInternshipDetails = () => {
       {/* Use auto margins (mb-auto or mt-auto) if you want it explicitly at the bottom, but flex-grow-1 is usually enough for the layout. */}
       {/* text-center for centering the text content if needed */}
       <div className="container-fluid d-flex flex-column justify-content-end align-items-center mt-5"> {/* Changed to d-flex flex-column for vertical alignment and justify-content-end */}
-        <div className="content">
+        <div className="content px-5">
           <h2 className="text-center mx-3">AI Engineer Intern</h2> {/* Add text-center if you want the h2 centered */}
           <p className="text-justify mt-5"> {/* Use text-justify if you want justified text, or text-left/text-start for left-aligned */}
             <b>Read my medium article here:</b> <a href="https://medium.com/htx-s-s-coe/detecting-the-undetectable-my-internship-journey-fighting-deepfakes-with-ai-76b7ca27e60c">here</a>

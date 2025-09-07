@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation  } from 'react-router-dom';
 import './App.css';
 import './components/Navbar.css';
@@ -8,6 +8,7 @@ import Hackathons from './pages/Hackathons';
 import ExperienceGrid from './pages/ExperienceGrid';
 import Certifications from './pages/Certifications';
 import SkillsSection from './pages/Awards';
+import ContactModal from './pages/ContactModal'
 
 
 const App = () => {
@@ -45,17 +46,27 @@ const App = () => {
       }, 0);
     }
   }, [location.state]);
-  
+
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleOpenModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+  };  
 
 
   return (
-    <div className="container-fluid py-2">
+    <div className="container-fluid py-2 mx-auto">
       <div className='welcomeContainer' id='home' ref={homeRef}>
         <div className="Navbar">
         <Navbar />
         </div>
-        <div className="welcome-page">
-          <div className="content">
+        <div className="container welcome-page mx-auto">
+          <div className="d-flex flex-column flex-md-row align-items-center justify-content-center">            
+            <div className='text-content'>
             <h1>
               Hi, nice to meet you! <br/> I'm Nathania! 
               {/* <span className="wave">👋</span> */}
@@ -64,21 +75,32 @@ const App = () => {
               A senior student studying Information Systems, majoring in Business Analytics in SMU.
             </p>
             <div className="social-icons">
-              <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/Nathania02" target="_blank" rel="noopener noreferrer">
                 <i className="fab fa-github"></i>
               </a>
-              <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.linkedin.com/in/nathania-yeo/" target="_blank" rel="noopener noreferrer">
                 <i className="fab fa-linkedin"></i>
               </a>
-              <a href="mailto:example@email.com">
+              <a href="mailto:nathaniayeo@gmail.com">
                 <i className="fas fa-envelope"></i>
               </a>
             </div>
-            <button className="contact-button">Contact Me</button>
+            {/* <button className="contact-button" onClick={handleOpenModal}>Contact Me</button>             */}
+            </div>
+            <div className="profile-image-container">
+              <img 
+                src="/heyitsnat/profile1.jpg" 
+                alt="Nathania Yeo" 
+                className="img-fluid rounded shadow-lg" 
+              />
+            </div>          
           </div>
-          <img src="/heyitsnat/profile.png" alt="Nathania Yeo" className="profile-image"/> 
-      </div>
+        {isModalOpen && (
+            <ContactModal onClose={handleCloseModal} email="nathaniayeo@gmail.com" /> // 🟢 Update the component's name
+          )}      
+        </div>
     </div>
+    <div className='container'>
       <div className="row justify-content-center">
         <div className="col-12 col-md-10 col-lg-8 text-center">
           <p className="mt-5 mb-5" id='about'>Passionate about data science and AI, I enjoy making use of data-driven strategies to build smarter systems 
@@ -90,6 +112,7 @@ const App = () => {
             </p>
         </div>
       </div>
+    </div>
       <div className='Experiences' id='experiences' ref={experiencesRef}>
       <div className="row justify-content-center">
         <div className="col-12 col-md-10 col-lg-8 text-center">

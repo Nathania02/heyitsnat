@@ -25,7 +25,7 @@ const BalletDetails = () => {
       {/* Use auto margins (mb-auto or mt-auto) if you want it explicitly at the bottom, but flex-grow-1 is usually enough for the layout. */}
       {/* text-center for centering the text content if needed */}
       <div className="container-fluid d-flex flex-column justify-content-end align-items-center mt-5"> {/* Changed to d-flex flex-column for vertical alignment and justify-content-end */}
-        <div className="content">
+        <div className="content px-5">
           <h2 className="text-center">Ballet Assistant Teacher</h2> {/* Add text-center if you want the h2 centered */}
           <p className="text-justify mt-3"> {/* Use text-justify if you want justified text, or text-left/text-start for left-aligned */}
             Completing my O-levels National Exams in 2018, I was given a chance to be a Ballet Assistant Teacher, under the tutelage of my Ballet Teacher. Little did I know that I would stay in this job for 6 years,
@@ -43,7 +43,7 @@ const BalletDetails = () => {
             Overall, being an assistant ballet teacher has allowed me to grow in many different areas. I was also able to have a deeper look into the life of a ballet teacher
             and the challenges faced. It was amazing to see my ballet teacher handled all these on her own previously, from planning exam schedules, administrative matters to managing classes.
             It had been a truly enjoyable experience being a ballet assistant teacher.
-          </p>
+            </p>
         </div>
       </div>
     </div>

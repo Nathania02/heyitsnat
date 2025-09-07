@@ -10,7 +10,7 @@ const experiences = [
   },
   {
     title: "AI Engineer Intern",
-    company: "HTX - Home Team Science and Technology Agency",
+    company: "HTX",
     period: "May 2024 - Oct 2024",
     link: "htx-details",
   },
@@ -21,7 +21,7 @@ const experiences = [
     link: "ops-details",
   },
   {
-    title: "Director of Office of Marketing, Communications and Media",
+    title: "Director of Marketing",
     company: "SMU Symphonia",
     period: "Jan 2023-Dec 2023",
     link: "marketing-details",

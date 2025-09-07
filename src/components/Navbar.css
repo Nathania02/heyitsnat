@@ -8,7 +8,7 @@
     border-radius: 80px;
     max-width: 800px;
     margin: auto;
-    margin-top: 30px
+    margin-top: 30px;
 
   }
 
@@ -21,6 +21,7 @@
     font-size: 1.5rem;
     font-weight: bold;
     padding-left: 40px;
+    font-family: "Merriweather", serif;
   }
   
   .navbar-links {
@@ -43,5 +44,13 @@
   
   .navbar-links a:hover {
     color: #0074d9; /* Light Blue on Hover */
+  }
+
+  .nav-link {
+    font-family: "Inter", sans-serif;
+  }
+
+  .navbar-brand {
+    font-family: "Merriweather", serif;
   }
   
