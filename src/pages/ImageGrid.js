@@ -179,7 +179,7 @@ const ImageGrid = () => {
       </Container>
 
       {/* The Modal Component */}
-      <Modal show={showModal} onHide={handleClose} centered size='lg'>
+      <Modal show={showModal} onHide={handleClose} centered size='xl'>
         <Modal.Header closeButton>
           <Modal.Title>{selectedProject?.title}</Modal.Title>
         </Modal.Header>
@@ -195,7 +195,7 @@ const ImageGrid = () => {
             />
           </div>
           {/* Display project description */}
-          <p className='px-3'>{selectedProject?.description}</p>
+          <div className='px-3'>{selectedProject?.description}</div>
         </Modal.Body>
         <Modal.Footer>
           {/* Add a button to close the modal */}
@@ -227,6 +227,14 @@ const ImageGrid = () => {
         .carousel-control-next {
           width: 5%; /* Make controls narrower */
         }
+        .modal-body a {
+          word-break: break-all;
+        }
+        .modal.show .modal-dialog {
+    display: flex;
+    justify-content: center; /* This handles horizontal alignment */
+    min-height: calc(100% - 1rem); /* Use min-height to allow content to grow */
+  }
       `}</style>
     </section>
   );

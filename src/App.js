@@ -91,7 +91,7 @@ const App = () => {
               <img 
                 src="/heyitsnat/profile1.jpg" 
                 alt="Nathania Yeo" 
-                className="img-fluid rounded shadow-lg" 
+                className="img-fluid rounded" 
               />
             </div>          
           </div>
