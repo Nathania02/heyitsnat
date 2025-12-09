@@ -72,7 +72,7 @@ const App = () => {
               {/* <span className="wave">👋</span> */}
             </h1>
             <p>
-              A senior student studying Information Systems, majoring in Business Analytics in SMU.
+              Fresh Graduate in Information Systems (Business Analytics) from SMU.
             </p>
             <div className="social-icons">
               <a href="https://github.com/Nathania02" target="_blank" rel="noopener noreferrer">
@@ -89,7 +89,7 @@ const App = () => {
             </div>
             <div className="profile-image-container">
               <img 
-                src="/heyitsnat/profile1.jpg" 
+                src="/heyitsnat/profile.png" 
                 alt="Nathania Yeo" 
                 className="img-fluid rounded" 
               />
