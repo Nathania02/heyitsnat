@@ -14,7 +14,7 @@ const projects = [
     {
     id: 1,
     title: "FYP: Sepsis Phenotyping",
-    image: '/heyitsnat/phenosense.png',
+    image: '/heyitsnat/phenosense_home.png',
     description: (
           <p className="text-justify mt-3">This is my Final Year Project (FYP) done in collaboration with SingHealth.
           Our group was tasked to trained multiple machine learning models for sepsis phenotyping and compare their performance. 
