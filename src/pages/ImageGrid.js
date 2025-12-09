@@ -7,11 +7,73 @@ import Col from 'react-bootstrap/Col';
 import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { image } from 'framer-motion/client';
 
 // Define your project data here
 const projects = [
-  {
+    {
     id: 1,
+    title: "FYP: Sepsis Phenotyping",
+    image: '/heyitsnat/phenosense.png',
+    description: (
+          <p className="text-justify mt-3">This is my Final Year Project (FYP) done in collaboration with SingHealth.
+          Our group was tasked to trained multiple machine learning models for sepsis phenotyping and compare their performance. 
+          We made used of MIMIC-IV, a de-identified dataset containing patient information such as demographics, vital signs, laboratory results and clinical outcomes.
+          Before we could train the models, we conducted literature review and a comprehensive research to understand more about Sepsis 
+          and the various phenotyping methods that were done by other researchers.
+          During this research, we identified and came up with a list of features that could be used to train the ML models. 
+          As clinical data is usually messy and incomplete, we had to also deal with missing data appropriately where we made used of 
+          imputation methods such as Multiple Imputation by Chained Equations (MICE) as well as BRITS and SAITS.
+          Machine Learning Models that have been trained include Consensus K-means Clustering, Weighted K-means Clustering with Dynamic Time Warping,
+          Latent Class Analysis and Group-based Trajectory Modeling (GBTM). 
+          <br/><br/> 
+          In order to deliver a whole pipeline to SingHealth, our team proactively developed a platform named "Phenosense", 
+          a platform which boosts collaboration between clinicians and data scientists in this sepsis phenotyping research.
+          Besides collaboration, "Phenosense" also allows users to visualise the phenotyping results interactively. In addition,
+          all model results are consolidated in this platform for easy access and retrieval.
+          <br/><br/>
+          Core features of this website includes:
+          <ul>
+            <li>Data Scientist are notified of Model Training Progress (Success/Failure)</li>
+            <li>Notes and Feedback Section for Data Scientists and Clinicians to provide notes or feedback.</li>
+            <li>Results are consolidated and can be accessed by any data scientists.</li>
+            <li>Clinicians are notified when model training results are sent to them.</li>
+          </ul>
+          Software/Tech Stack that were used in our project: 
+          <ul>
+            <li>Agile: Jira, Google Drive</li>
+            <li>Frontend: Vue.js, Tailwind CSS</li>
+            <li>Backend: Python, FastAPI, Celery, Redis</li>
+            <li>Testing: Postman API</li>
+          </ul>
+          As this is a confidential project with SingHealth, I am unable to share the project website or GitHub link here.
+          <br/><br/>
+          <a href="https://drive.google.com/file/d/1XN33h5JgwyJSCU7lQZ8KAyGRE23sdPJv/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="ms-1">
+              Report PDF Link
+          </a>
+        </p>
+
+    )
+  },
+  {
+    id: 2,
+    title: 'PDP Helpbot',
+    image: '/heyitsnat/genai.png',
+    description: (
+      <p className="text-justify mt-3">
+        This project focuses on a key problem that most Singaporeans face - understanding the law.
+        With this helpbot, our team aims to consolidate the bulk of Singapore legislations regarding data
+        protection and provide it to users in plain English. Users can clarify their doubts regarding data
+        protection rights and obligations. 
+        <br/><br/>
+        Two types of RAG have been used in this helpbot: Naive RAG and Advanced RAG.
+        For both RAG methods, the data sources have been chunked into smaller pieces and stored in a vector database. 
+        Evaluation of both RAG methods have been done where metrics such as Answer Relevancy, Answer Correctness etc. were used. 
+    </p>
+    )
+  },
+  {
+    id: 2,
     title: 'The Green Tree',
     image: '/heyitsnat/greentree.png',
     description: (
@@ -26,7 +88,7 @@ const projects = [
     ),
   },
   {
-    id: 2,
+    id: 3,
     title: 'CAREXPLORER',
     image: '/heyitsnat/gaa.png',
     description: (
@@ -41,7 +103,7 @@ const projects = [
     ),
   },
   {
-    id: 3,
+    id: 4,
     title: 'WFH Tracking System',
     image: '/heyitsnat/wfhtrackingsystem.png',
     description: (
@@ -76,39 +138,39 @@ const projects = [
           </a>
         </p>
     )
-  },
-  {
-    id: 4,
-    title: 'AI Document Assistant',
-    image: 'https://placehold.co/400x300/c0c0c0/333333?text=AI+Doc+Assistant',
-    description: (
-      
-        <p className="text-justify mt-3">This was a coding project that I did during Summer 2025. Reading through Medium articles that were talking about technologies, 
-        I came across this article where the author built a custom AI Document Assistant that analyses PDFs and produce results based on the user query. 
-        <br/><br/>
-        Medium Article Link: 
-          <a href="https://python.plainenglish.io/how-i-built-a-custom-ai-document-assistant-that-understands-1000s-of-pdfs-and-talks-like-a-human-561c77e29667" target="_blank" rel="noopener noreferrer" className="ms-1">
-           https://python.plainenglish.io/how-i-built-a-custom-ai-document-assistant-that-understands-1000s-of-pdfs-and-talks-like-a-human-561c77e29667
-          </a>
-          <br/><br/>
-          Users can upload a folder with all their PDFs file, ask a question and this AI Document Assistant would give the answer.
-          Software/Tech Stack that were used in this project: 
-          <ul>
-            <li>Python</li>
-            <li>Ollama</li>
-            <li>Gradio</li>
-          </ul>
-          There are still improvement needed to be made to this AI Document Assistant. Some improvements include, allowing the assistant to process image and ultimately, 
-          provide the image as an answer to the user if he/she asks for it. Another improvement is to improve the result accuracy, ensuring that the assistant is able to provide 
-          the correct answer to the user query. 
-          <br/> <br/>
-          Project GitHub Link:
-          <a href="https://github.com/Nathania02/ai_doc_assistant" target="_blank" rel="noopener noreferrer" className="ms-1">
-            https://github.com/Nathania02/ai_doc_assistant
-          </a>
-        </p>
-    )
   }
+  // {
+  //   id: 5,
+  //   title: 'AI Document Assistant',
+  //   image: 'https://placehold.co/400x300/c0c0c0/333333?text=AI+Doc+Assistant',
+  //   description: (
+      
+  //       <p className="text-justify mt-3">This was a coding project that I did during Summer 2025. Reading through Medium articles that were talking about technologies, 
+  //       I came across this article where the author built a custom AI Document Assistant that analyses PDFs and produce results based on the user query. 
+  //       <br/><br/>
+  //       Medium Article Link: 
+  //         <a href="https://python.plainenglish.io/how-i-built-a-custom-ai-document-assistant-that-understands-1000s-of-pdfs-and-talks-like-a-human-561c77e29667" target="_blank" rel="noopener noreferrer" className="ms-1">
+  //          https://python.plainenglish.io/how-i-built-a-custom-ai-document-assistant-that-understands-1000s-of-pdfs-and-talks-like-a-human-561c77e29667
+  //         </a>
+  //         <br/><br/>
+  //         Users can upload a folder with all their PDFs file, ask a question and this AI Document Assistant would give the answer.
+  //         Software/Tech Stack that were used in this project: 
+  //         <ul>
+  //           <li>Python</li>
+  //           <li>Ollama</li>
+  //           <li>Gradio</li>
+  //         </ul>
+  //         There are still improvement needed to be made to this AI Document Assistant. Some improvements include, allowing the assistant to process image and ultimately, 
+  //         provide the image as an answer to the user if he/she asks for it. Another improvement is to improve the result accuracy, ensuring that the assistant is able to provide 
+  //         the correct answer to the user query. 
+  //         <br/> <br/>
+  //         Project GitHub Link:
+  //         <a href="https://github.com/Nathania02/ai_doc_assistant" target="_blank" rel="noopener noreferrer" className="ms-1">
+  //           https://github.com/Nathania02/ai_doc_assistant
+  //         </a>
+  //       </p>
+  //   )
+  // }
 ];
 
 const ImageGrid = () => {
@@ -138,7 +200,7 @@ const ImageGrid = () => {
     return R;
   };
 
-  const projectChunks = chunkArray(projects, 2); // Display 3 projects per carousel item
+  const projectChunks = chunkArray(projects, 3); // Display 3 projects per carousel item
 
   return (
     <section id="projects" className="py-5">
